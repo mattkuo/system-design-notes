@@ -1,0 +1,34 @@
+<h1 id="reliability"><a aria-hidden="true" class="anchor-heading" href="#reliability"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Reliability</h1>
+<ul>
+<li>A system is considered <em>reliable</em> when it performs to specifications with acceptable performance. It continues to function correctly in face of different types of errors that could occur (e.g. human, software, hardware)</li>
+<li>We differentiate between <em>faults</em> and <em>failures</em>. Faults are when the system stops performing to specifications. Failures occur when system stops providing a service to its users.</li>
+<li>It's impossible to design a system that's 100% fault-tolerant or resilient (e.g. can't protect system against natural disasters)</li>
+</ul>
+<h2 id="hardware-errors"><a aria-hidden="true" class="anchor-heading" href="#hardware-errors"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Hardware Errors</h2>
+<ul>
+<li>Redundancy of a single machine's components used to be enough to gaurantee high availability (disks, batteries, etc.)</li>
+<li>Nowadays we move towards redundancy in number of machines as well (e.g. AWS prioritizes elasticity and flexibility over hardware reliability of a single machine)</li>
+<li>Advantages of machine redundancy: deploy/update without taking down whole system</li>
+</ul>
+<h2 id="software-errors"><a aria-hidden="true" class="anchor-heading" href="#software-errors"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Software Errors</h2>
+<ul>
+<li>Usually related bugs where an assumption is made about the system's environment which was usually true until it wasn't</li>
+<li>Can do little to prevent other than monitoring, thinking through assumptions and testing (e.g. chaos monkey)</li>
+</ul>
+<h2 id="human-errors"><a aria-hidden="true" class="anchor-heading" href="#human-errors"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Human Errors</h2>
+<ul>
+<li>Humans unreliable, most outages are caused by operator error</li>
+<li>Ways to prevent:
+<ul>
+<li>Introduce processes to make it difficult to make mistakes</li>
+<li>Sandbox environments for devs to test with real data</li>
+<li>Testing: Manual, unit, integration</li>
+<li>Monitoring/telemetry allow us to see how a system is functioning and detect errors before they get out of hand</li>
+</ul>
+</li>
+</ul>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/system-design-notes/notes/aYiQhcOPTZlphrGiOEnrY">Data System Fundamentals</a></li>
+</ul>
